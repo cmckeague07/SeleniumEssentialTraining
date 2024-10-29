@@ -3,7 +3,8 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   build:
@@ -20,10 +21,10 @@ jobs:
 
       - name: Build with Maven
         run: |
-          cd 'Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04'
+          cd "Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04"
           mvn clean install
 
       - name: Run Tests
         run: |
-          cd 'Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04/test'
+          cd "Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04/test"
           mvn test
