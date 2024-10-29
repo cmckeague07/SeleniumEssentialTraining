@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - main  # Change this if your main branch is named differently
+      - master
   pull_request:
 
 jobs:
