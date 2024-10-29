@@ -26,5 +26,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          cd "Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04/test"
+          cd "Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04"
           mvn test
