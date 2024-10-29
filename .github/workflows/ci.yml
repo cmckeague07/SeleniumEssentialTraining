@@ -20,10 +20,10 @@ jobs:
 
       - name: Build with Maven
         run: |
-          cd 'Selenium Projectsd/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04'
-	  mvn clean install
+          cd 'Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04'
+          mvn clean install
 
       - name: Run Tests
         run: |
-          cd 'Selenium Projectsd/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04'
+          cd 'Selenium Projects/Ex_Files_Selenium_EssT/Ex_Files_Selenium_EssT/Exercise Files/07_04'
           mvn test
